@@ -1,0 +1,138 @@
+{
+   "Buy_a_Lifetime_license": {
+      "description": "",
+      "message": "Cumpara o licenta pe viata"
+   },
+   "Buy_a_Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "Cumpara o licenta pe viata din donatie"
+   },
+   "Buy_a_Monthly_subscription": {
+      "description": "",
+      "message": "Cumpara un abonament lunar"
+   },
+   "Buy_a_one_day_trial": {
+      "description": "",
+      "message": "Cumpara o licenta de o zi"
+   },
+   "CANT_REACH_SERVER": {
+      "description": "",
+      "message": "Nu pot ajunge la server, verifica conexiunea la internet."
+   },
+   "Can_t_register_user__you_must_be_logged_in": {
+      "description": "",
+      "message": "Nu-ti putem inregistra utilizatorul, trebuie sa fii logat in browser."
+   },
+   "Go_to": {
+      "description": "",
+      "message": "Vezi"
+   },
+   "Got_a_license_key__Type_it_here_": {
+      "description": "",
+      "message": "Ai o licenta? Scrie aici!"
+   },
+   "Hey___You_need_some_videos___": {
+      "description": "",
+      "message": "Hey ! Ai nevoie de filme ;)"
+   },
+   "Lifetime_license": {
+      "description": "",
+      "message": "Licenta pe viata"
+   },
+   "Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "Licenta pe viata din donatie"
+   },
+   "Loading_products": {
+      "description": "",
+      "message": "Incarc produsele"
+   },
+   "Monthly_subscription": {
+      "description": "",
+      "message": "Abonament lunar"
+   },
+   "One_day_trial": {
+      "description": "",
+      "message": "Incearca o zi"
+   },
+   "Please_go_to_your_browser_settings_": {
+      "description": "",
+      "message": "Intra in setarile browserului si conecteaza-te."
+   },
+   "Reload_Data_from_server": {
+      "description": "",
+      "message": "Reincarca datele de pe server"
+   },
+   "Valid_forever": {
+      "description": "",
+      "message": "Valid pentru totdeauna"
+   },
+   "Valid_until": {
+      "description": "",
+      "message": "Valida pana la"
+   },
+   "You_are_not_logged_into_google_chrome_": {
+      "description": "",
+      "message": "Nu esti logat in google chrome."
+   },
+   "You_don_t_have_a_license__are_you_logged_into_google_chrome_": {
+      "description": "",
+      "message": "Nu ai o licenta, esti logat in google chrome ?"
+   },
+   "You_have_a_Lifetime_license": {
+      "description": "",
+      "message": "Ai o licenta pe viata"
+   },
+   "You_have_a_Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "Ai o licenta pe viata din donatie"
+   },
+   "You_have_a_Monthly_subscription": {
+      "description": "",
+      "message": "Ai un abonament lunar"
+   },
+   "You_have_a_one_day_trial": {
+      "description": "",
+      "message": "Ai o licenta de o zi"
+   },
+   "allTabs": {
+      "description": "",
+      "message": "Toate"
+   },
+   "currentTab": {
+      "description": "",
+      "message": "Tab Curent"
+   },
+   "enjoy": {
+      "description": "",
+      "message": "enjoy"
+   },
+   "extensionDescription": {
+      "description": "Descrierea extensiei.",
+      "message": "Manager de descarcari videouri vimeo , simplu si profesional."
+   },
+   "extensionName": {
+      "description": "Numele extensiei.",
+      "message": "Descarca filme Vimeo, Premium"
+   },
+   "feedback": {
+      "description": "",
+      "message": "feedback"
+   },
+   "help": {
+      "description": "",
+      "message": "ajutor"
+   },
+   "homepage": {
+      "description": "",
+      "message": "viziteaza sit"
+   },
+   "or_reload_the_page": {
+      "description": "",
+      "message": "sau reincarca pagina"
+   },
+   "youHaveA": {
+      "description": "",
+      "message": "Ai o  "
+   }
+}

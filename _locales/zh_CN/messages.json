@@ -1,0 +1,130 @@
+{
+   "Buy_a_Lifetime_license": {
+      "description": "",
+      "message": "购买终身许可证"
+   },
+   "Buy_a_Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "购买捐赠终身许可证"
+   },
+   "Buy_a_Monthly_subscription": {
+      "description": "",
+      "message": "购买包月"
+   },
+   "Buy_a_one_day_trial": {
+      "description": "",
+      "message": "购买一天试用"
+   },
+   "CANT_REACH_SERVER": {
+      "description": "",
+      "message": "无法连接服务器，请检查你的互联网连接"
+   },
+   "Can_t_register_user__you_must_be_logged_in": {
+      "description": "",
+      "message": "无法注册你的用户，你必须先登录"
+   },
+   "Go_to": {
+      "description": "In the context of 'Go to vimeo.com' synonyms: Load, See ",
+      "message": "转到"
+   },
+   "Got_a_license_key__Type_it_here_": {
+      "description": "18 chars max for translation",
+      "message": "已有许可证密钥？在此输入！"
+   },
+   "Hey___You_need_some_videos___": {
+      "description": "",
+      "message": "嘿！你需要一些视频  ;)"
+   },
+   "Lifetime_license": {
+      "description": "",
+      "message": "Lifetime license"
+   },
+   "Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "捐赠终身许可证"
+   },
+   "Loading_products": {
+      "description": "",
+      "message": "正在加载产品"
+   },
+   "Monthly_subscription": {
+      "description": "",
+      "message": "包月"
+   },
+   "One_day_trial": {
+      "description": "",
+      "message": "一天试用"
+   },
+   "Please_go_to_your_browser_settings_": {
+      "description": "",
+      "message": "请转到你的浏览器设置页面并登录。"
+   },
+   "Reload_Data_from_server": {
+      "description": "",
+      "message": "重新从服务器加载数据"
+   },
+   "Valid_until": {
+      "description": "License valid until 2014-01-19",
+      "message": "有效期至"
+   },
+   "You_are_not_logged_into_google_chrome_": {
+      "description": "",
+      "message": "你还没有登录google chrome浏览器。"
+   },
+   "You_don_t_have_a_license__are_you_logged_into_google_chrome_": {
+      "description": "",
+      "message": "你没有许可证，你登录了google chrome浏览器吗？"
+   },
+   "You_have_a_Lifetime_license": {
+      "description": "",
+      "message": "你拥有终身许可证"
+   },
+   "You_have_a_Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "你有捐赠终身许可证"
+   },
+   "You_have_a_Monthly_subscription": {
+      "description": "",
+      "message": "你有包月"
+   },
+   "You_have_a_one_day_trial": {
+      "description": "",
+      "message": "你有一天试用"
+   },
+   "allTabs": {
+      "description": "11 chars max for translation",
+      "message": "所有标签"
+   },
+   "currentTab": {
+      "description": "11 char max for translation",
+      "message": "当前标签"
+   },
+   "enjoy": {
+      "description": "",
+      "message": "尽情享受"
+   },
+   "extensionDescription": {
+      "description": "Extension description.",
+      "message": "可下载任何托管在全球各地网络上的Vimeo视频的专业又简单的下载器。"
+   },
+   "extensionName": {
+      "description": "Extension name.",
+      "message": "下载Vimeo优质视频"
+   },
+   "feedback": {
+      "description": "",
+      "message": "反馈"
+   },
+   "help": {
+      "description": "",
+      "message": "帮助"
+   },
+   "homepage": {
+      "description": "",
+      "message": "主页"
+   },
+   "or_reload_the_page": {
+      "description": "",
+      "message": "或重新加载页面"
+   }
+}

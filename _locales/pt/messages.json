@@ -1,0 +1,130 @@
+{
+   "Buy_a_Lifetime_license": {
+      "description": "",
+      "message": "Comprar uma licença vitalícia"
+   },
+   "Buy_a_Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "Comprar uma licença vitalícia de doação"
+   },
+   "Buy_a_Monthly_subscription": {
+      "description": "",
+      "message": "Comprar uma assinatura mensal"
+   },
+   "Buy_a_one_day_trial": {
+      "description": "",
+      "message": "Comprar um dia de experiência"
+   },
+   "CANT_REACH_SERVER": {
+      "description": "",
+      "message": "Não foi possível acessar o servidor, verifique sua conexão com a internet"
+   },
+   "Can_t_register_user__you_must_be_logged_in": {
+      "description": "",
+      "message": "Não foi possível registrar o seu usuário, você precisa se conectar primeiro"
+   },
+   "Go_to": {
+      "description": "In the context of 'Go to vimeo.com' synonyms: Load, See ",
+      "message": "Vá para"
+   },
+   "Got_a_license_key__Type_it_here_": {
+      "description": "18 chars max for translation",
+      "message": "Chave de ativação:"
+   },
+   "Hey___You_need_some_videos___": {
+      "description": "",
+      "message": "Ei! Você precisa de alguns vídeos :)"
+   },
+   "Lifetime_license": {
+      "description": "",
+      "message": "Licença vitalícia"
+   },
+   "Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "Licença vitalícia de Doação"
+   },
+   "Loading_products": {
+      "description": "",
+      "message": "Carregando produtos"
+   },
+   "Monthly_subscription": {
+      "description": "",
+      "message": "Assinatura mensal"
+   },
+   "One_day_trial": {
+      "description": "",
+      "message": "Experimente por um dia"
+   },
+   "Please_go_to_your_browser_settings_": {
+      "description": "",
+      "message": "Vá para as configurações do seu navegador e conecte-se"
+   },
+   "Reload_Data_from_server": {
+      "description": "",
+      "message": "Recarregar dados do servidor"
+   },
+   "Valid_until": {
+      "description": "License valid until 2014-01-19",
+      "message": "Válido até"
+   },
+   "You_are_not_logged_into_google_chrome_": {
+      "description": "",
+      "message": "Você não está conectado no Google Chrome."
+   },
+   "You_don_t_have_a_license__are_you_logged_into_google_chrome_": {
+      "description": "",
+      "message": "Você não tem uma licença. Você está conectado no google chrome?"
+   },
+   "You_have_a_Lifetime_license": {
+      "description": "",
+      "message": "Você tem uma licença vitalícia"
+   },
+   "You_have_a_Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "Você tem uma licença vitalícia de Doação"
+   },
+   "You_have_a_Monthly_subscription": {
+      "description": "",
+      "message": "Você tem uma assinatura mensal"
+   },
+   "You_have_a_one_day_trial": {
+      "description": "",
+      "message": "Você tem um dia de experiência"
+   },
+   "allTabs": {
+      "description": "11 chars max for translation",
+      "message": "Todas abas"
+   },
+   "currentTab": {
+      "description": "11 char max for translation",
+      "message": "Aba atual"
+   },
+   "enjoy": {
+      "description": "",
+      "message": "aproveite"
+   },
+   "extensionDescription": {
+      "description": "Extension description.",
+      "message": "Gerenciador de downloads simples e profissional de qualquer vídeo Vimeo hospedado em qualquer lugar na web."
+   },
+   "extensionName": {
+      "description": "Extension name.",
+      "message": "Baixe vídeos Vimeo, Premium"
+   },
+   "feedback": {
+      "description": "",
+      "message": "feedback"
+   },
+   "help": {
+      "description": "",
+      "message": "ajuda"
+   },
+   "homepage": {
+      "description": "",
+      "message": "página inicial"
+   },
+   "or_reload_the_page": {
+      "description": "",
+      "message": "ou atualize a página"
+   }
+}

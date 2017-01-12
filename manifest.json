@@ -1,0 +1,42 @@
+{
+   "background": {
+      "scripts": [ "bower_components/async/lib/async.js", "bower_components/lodash/dist/lodash.js", "lib/analytics.js", "lib/settings.js", "lib/user.js", "lib/api.js", "lib/gcm.js", "lib/tabs.js", "lib/vimeo.js", "lib/app.js", "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content_scripts/vimeo.js" ],
+      "matches": [ "*://*.vimeo.com/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extensionDescription__",
+   "externally_connectable": {
+      "matches": [ "*://*.vimeo.com/*" ]
+   },
+   "icons": {
+      "128": "assets/one.png",
+      "16": "assets/two.png",
+      "32": "assets/three.png",
+      "48": "assets/four.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkH/zPbrg08qika9WWduXBvTSj3zn2ME11foXi4pu0/ZY+WGbQ/flbhvMNc1wlA5yORQDaRKYc2Q/Qys+U6JCWjNavx26NcIR1cGoTZC0vK/c68UPLsgjQlwYVJ9dxjKO02JMFayLfjRZdab/HABLxgQXZlSpqjC5I/vhJKUdTFyW6PQVIgr3prGJC5aZQb+OxBoiCUbh7hmakDt3pLUJMPGGS0X0lieH0SGuUjZqVf8K/rjhygqBC/XJ0dExg75kQrvcWM7GhSLyiw4pQfkVmhnlQA543IIHpWpbJsOmsfF9PbE7HKiOCH1SAEI7QCd0WNOr4je3pBhnLAUwbcqDTQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "37",
+   "name": "__MSG_extensionName__",
+   "oauth2": {
+      "client_id": "445822693278-hmu350d63dfrpijeac8ne1be51c03gh9.apps.googleusercontent.com",
+      "scopes": [ "email" ]
+   },
+   "page_action": {
+      "default_icon": {
+         "19": "assets/two.png",
+         "38": "assets/one.png"
+      },
+      "default_popup": "popup/index.html",
+      "default_title": "Download"
+   },
+   "permissions": [ "http://*.vimeo.com/*", "https://*.vimeo.com/*", "https://licensor.io/*", "https://www.google-analytics.com/", "downloads", "webRequest", "tabs", "identity", "identity.email", "gcm", "storage" ],
+   "short_name": "DwnlVimeoVid",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0",
+   "web_accessible_resources": [ "public/*" ]
+}

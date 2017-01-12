@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: scroll;
+    min-height: 600px;
+    background-color: #E5E5E5;
+    font-family: 'RobotoDraft', sans-serif;
+    min-width: 320px;
+}
+
+core-header-panel {
+    -webkit-overflow-scrolling: touch;
+}
+
+core-toolbar {
+    background: #f4033b;
+    color: white;
+}
+
+#tabs {
+    width: 100%;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+}
+.container {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.videoCard > div {
+    background-color: rgba(23, 61, 99, 0.50);
+    padding: 20px;
+    min-height: 90px;
+}
+
+.videoCard {
+    display: block;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    background-size: cover;
+    width: 300px;
+}
+
+.videoCard .card-header p {
+}
+
+.videoCard .card-header {
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: black 2px 2px 8px;
+}
+
+.videoCard .card-header ::content h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.videoCard core-icon-button, .videoCard paper-icon-button {
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    color: #ffffff;
+}
+
+.videoCard paper-icon-button.iconOpen {
+    position: absolute;
+    top: 36px;
+    right: 3px;
+    color: #ffffff;
+}
+
+.videoCard paper-icon-button.iconRemove {
+    position: absolute;
+    top: 76px;
+    right: 3px;
+    color: #ffffff;
+}
+
+paper-icon-button.complete {
+    color: green;
+}
+
+paper-icon-button.warning {
+    color: orange;
+}
+
+paper-icon-button.progress {
+    color: blue;
+}
+
+core-tooltip.fancy::shadow .core-tooltip {
+    opacity: 0;
+    -webkit-transition: all 300ms cubic-bezier(0, 1.92, .99, 1.07);
+    transition: all 300ms cubic-bezier(0, 1.92, .99, 1.07);
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+}
+
+core-tooltip.fancy:hover::shadow .core-tooltip,
+core-tooltip.fancy:focus::shadow .core-tooltip {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+paper-icon-button.medium::shadow core-icon {
+    padding: 6px;
+}
+
+.licenseCard {
+    display: block;
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    width: 280px;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.licenseCard polyfill-next-selector {
+    content: '.card-header h2';
+}
+
+.licenseCard .card-header ::content h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.licenseCard polyfill-next-selector {
+    content: '.card-header img';
+}
+
+.licenseCard .card-header ::content img {
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.licenseCard paper-button {
+    background-color: #0066bb;
+    color: #fff;
+}
+
+a {
+    font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+    text-decoration: none;
+    color: #3f51b5;
+}
+
+.downloadLink{
+    font-size:12px;
+    width:100%;
+}

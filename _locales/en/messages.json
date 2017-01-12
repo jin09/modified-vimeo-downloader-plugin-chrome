@@ -1,0 +1,142 @@
+{
+   "Buy_a_Lifetime_license": {
+      "description": "",
+      "message": "Buy a Lifetime license"
+   },
+   "Buy_a_Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "Buy a Lifetime license from Donation"
+   },
+   "Buy_a_Monthly_subscription": {
+      "description": "",
+      "message": "Buy a Monthly subscription"
+   },
+   "Buy_a_one_day_trial": {
+      "description": "",
+      "message": "Buy a One day trial"
+   },
+   "CANT_REACH_SERVER": {
+      "description": "",
+      "message": "Can't reach server, check your internet connection"
+   },
+   "Can_t_register_user__you_must_be_logged_in": {
+      "description": "",
+      "message": "Can't register your user, you must be logged in"
+   },
+   "Go_to": {
+      "description": "In the context of 'Go to vimeo.com' synonyms: Load, See ",
+      "message": "Go to"
+   },
+   "Got_a_license_key__Type_it_here_": {
+      "description": "18 chars max for translation",
+      "message": "Got a license key? Type it here!"
+   },
+   "Hey___You_need_some_videos___": {
+      "description": "",
+      "message": "Hey ! You need some videos ;)"
+   },
+   "License_expired___": {
+      "description": "",
+      "message": "License expired ;("
+   },
+   "Lifetime_license": {
+      "description": "",
+      "message": "Lifetime license"
+   },
+   "Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "Lifetime license from Donation"
+   },
+   "Loading_products": {
+      "description": "",
+      "message": "Loading products"
+   },
+   "Monthly_subscription": {
+      "description": "",
+      "message": "Monthly subscription"
+   },
+   "One_day_trial": {
+      "description": "",
+      "message": "One day trial"
+   },
+   "Please_go_to_your_browser_settings_": {
+      "description": "",
+      "message": "Please go to your browser settings and login."
+   },
+   "Reload_Data_from_server": {
+      "description": "",
+      "message": "Reload Data from server"
+   },
+   "Review_App": {
+      "description": "",
+      "message": "Review App"
+   },
+   "Valid_forever": {
+      "description": "",
+      "message": "Valid forever"
+   },
+   "Valid_until": {
+      "description": "License valid until 2014-01-19",
+      "message": "Valid until"
+   },
+   "You_are_not_logged_into_google_chrome_": {
+      "description": "",
+      "message": "You are not logged into google chrome."
+   },
+   "You_don_t_have_a_license__are_you_logged_into_google_chrome_": {
+      "description": "",
+      "message": "You don't have a license, are you logged into google chrome?"
+   },
+   "You_have_a_Lifetime_license": {
+      "description": "",
+      "message": "You have a Lifetime license"
+   },
+   "You_have_a_Lifetime_license_from_Donation": {
+      "description": "",
+      "message": "You have a Lifetime license from Donation"
+   },
+   "You_have_a_Monthly_subscription": {
+      "description": "",
+      "message": "You have a Monthly subscription"
+   },
+   "You_have_a_one_day_trial": {
+      "description": "",
+      "message": "You have a One day trial"
+   },
+   "allTabs": {
+      "description": "11 chars max for translation",
+      "message": "All Tabs"
+   },
+   "currentTab": {
+      "description": "11 char max for translation",
+      "message": "Current Tab"
+   },
+   "enjoy": {
+      "description": "",
+      "message": "enjoy"
+   },
+   "extensionDescription": {
+      "description": "Extension description.",
+      "message": "Only for educational purposes"
+   },
+   "extensionName": {
+      "description": "Extension name.",
+      "message": "Vimeo Hacked"
+   },
+   "feedback": {
+      "description": "",
+      "message": "feedback"
+   },
+   "help": {
+      "description": "",
+      "message": "help"
+   },
+   "homepage": {
+      "description": "",
+      "message": "homepage"
+   },
+   "or_reload_the_page": {
+      "description": "",
+      "message": "or reload the page"
+   }
+}

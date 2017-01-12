@@ -1,0 +1,152 @@
+<!DOCTYPE html ng-csp>
+
+<html>
+<head>
+    <title></title>
+    <script src="../bower_components/platform/platform.js"></script>
+    <link rel="import" href="../bower_components/core-icons/core-icons.html">
+    <link rel="import" href="../bower_components/core-icons/editor-icons.html">
+    <link rel="import" href="../bower_components/core-icons/av-icons.html">
+    <link rel="import" href="../bower_components/core-icons/notification-icons.html">
+    <link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="../bower_components/paper-button/paper-button.html">
+    <link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+    <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+    <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="../bower_components/paper-toast/paper-toast.html">
+    <link rel="import" href="../bower_components/core-tooltip/core-tooltip.html">
+    <link rel="import" href="../bower_components/paper-input/paper-input.html">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
+
+    <link rel="stylesheet" href="../bower_components/angular/angular-csp.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body unresolved ng-app="downloadVideos" ng-csp ng-controller="MainController">
+
+<core-header-panel>
+    <core-toolbar ng-if="license.serverError" style="background: #ff5722;">
+        <span flex>{{getMessage('CANT_REACH_SERVER')}}</span>
+        <paper-fab mini icon="notification:sync-problem" style="background-color:dodgerblue"
+                   ng-click="refreshUser()"></paper-fab>
+    </core-toolbar>
+
+    <core-toolbar>
+        <paper-tabs id="tabs" selected="currentTab" self-end>
+            <paper-tab name="currentTab" ng-click="filterThisTab()">{{getMessage('currentTab')}}</paper-tab>
+            <paper-tab name="allTabs" ng-click="filterAllTabs()">{{getMessage('allTabs')}}</paper-tab>
+            </paper-tab>
+        </paper-tabs>
+    </core-toolbar>
+
+    <div class="container" layout vertical center>
+        <div class="videoCards" ng-show="payment">
+            <core-header-panel>
+                <core-toolbar style="margin-bottom:10px;background: #0f9d58">
+                    <span flex>
+                        <span ng-if="!user.data">
+                            {{getMessage("You are not logged into google chrome.")}}<br/>
+                            <span style="font-size:0.8em">{{getMessage("Please go to your browser settings.")}}</span>
+                        </span>
+                        <span ng-if="license.product">
+                            {{getMessage('You have a ' + license.product.name)}}
+                        </span>
+                    <div ng-if="license.license.valid.forever">{{getMessage('Valid forever')}}</div>
+                    <div ng-if="license.license.valid.until" style="font-size: 0.8em">{{getMessage('Valid until')}}
+                        {{license.license.valid.until.toLocaleString()}}
+                        <span ng-if="license.expired" style="display:block;font-weight: bold">{{getMessage('License expired ;(')}}</span>
+                    </div>
+                    </span>
+                </core-toolbar>
+                <core-toolbar ng-if="loadingProducts" style="margin-bottom:10px">
+                    <span flex>
+                        {{getMessage('Loading products')}}
+                    </span>
+                </core-toolbar>
+                <core-toolbar ng-if="cantLoadProducts && !loadingProducts" style="margin-bottom:10px">
+                    <span flex>
+                        {{getMessage('Problem loading products ;(')}}
+                    </span>
+                </core-toolbar>
+
+                <core-toolbar ng-repeat="product in products"
+                              style="margin-bottom:10px">
+                    <span flex>
+                        {{getMessage('Buy a ' + product.name)}}
+                        <div style="font-size:1.5rem">{{product.price|currency:'$'}}</div>
+                    </span>
+                    <paper-fab mini icon="editor:attach-money" ng-click="purchaseProduct(product);"></paper-fab>
+                </core-toolbar>
+                <core-toolbar style="background: #fff;color:#333;margin-bottom:10px">
+                    <span flex>{{getMessage('Reload Data from server')}}</span>
+                    <paper-fab mini icon="notification:sync-problem" style="background-color:#0f9d58"
+                               ng-click="refreshUser()"></paper-fab>
+                </core-toolbar>
+                <core-toolbar style="background: #fff;color:#333;margin-bottom:10px">
+
+                    <span flex>
+                        <a href="" ng-click="openLink('http://www.vimeo-download-videos.com/');"
+                           target="_blank">{{getMessage('homepage')}}</a>
+                    </span>
+                    <paper-fab mini icon="launch" style="background-color:#0f9d58"
+                               ng-click="openLink('http://www.vimeo-download-videos.com/');"></paper-fab>
+                </core-toolbar>
+                <core-toolbar style="background: #fff;color:#333;margin-bottom:10px">
+                    <span flex><a href="" ng-click="openLink('https://downloadvimeovideos.uservoice.com');">{{getMessage('help')}}</a></span>
+                    <paper-fab mini icon="launch" ng-click="openLink('https://downloadvimeovideos.uservoice.com');"
+                               style="background-color:#0f9d58"></paper-fab>
+                </core-toolbar>
+                <core-toolbar style="background: #fff;color:#333;margin-bottom:10px">
+                    <span flex><a href=""
+                                  ng-click="openLink('https://chrome.google.com/webstore/detail/download-vimeo-videos-pre/phpaiffimemgakmakpcehgbophkbllkf/reviews');">
+                        {{getMessage('Review App')}}</a></span>
+                    <paper-fab mini icon="launch"
+                               ng-click="openLink('https://chrome.google.com/webstore/detail/download-vimeo-videos-pre/phpaiffimemgakmakpcehgbophkbllkf/reviews');"
+                               style="background-color:#0f9d58"></paper-fab>
+                </core-toolbar>
+            </core-header-panel>
+        </div>
+        <div class="videoCards" ng-hide="payment">
+            <div class="videoCard" ng-repeat="video in videos  track by $index"
+                 style="background-image: url('{{video.video.thumbs[640]}}');">
+                <div>
+                    <div class="card-header" layout horizontal center>
+                        <p>{{video.video.title}}</p>
+                    </div>
+                    <paper-icon-button class="medium iconDownload" ng-class="
+                    (video.download.state.current=='complete')?'complete':
+                    (video.download.state.current=='interrupted')?'warning':
+                    (video.download)?'progress':'';
+                    " ng-click="downloadVideo(video)"
+                                       icon="cloud-download"></paper-icon-button>
+                    <paper-icon-button class="medium iconOpen" ng-show="video.download.state.current=='complete'"
+                                       ng-click="playVideo(video)" icon="av:video-youtube"></paper-icon-button>
+                    <paper-icon-button class="medium iconRemove" ng-click="removeVideo(video)"
+                                       icon="highlight-remove"></paper-icon-button>
+                </div>
+                <input ng-click="selectMe($event);" class="downloadLink" ng-hide="license.expired" value="{{video.downloadURL}}"/>
+                <a href="{{video.downloadURL}}" download="{{video.video.title}}" style="font-size: 20px; background: white;font-weight: bold;">DOWNLOAD TWEAKED</a>
+            </div>
+
+
+            <core-header-panel ng-hide="videos">
+                
+            </core-header-panel>
+
+
+            <core-header-panel>
+                
+            </core-header-panel>
+        </div>
+
+
+    </div>
+</core-header-panel>
+
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
